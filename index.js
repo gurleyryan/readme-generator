@@ -6,6 +6,7 @@ function writeToFile(fileName, data) {
     var fileText = "";
     fileText += `${data.name}'s README\n\n`;
     fileText += ` # ${data.title}\n\n`;
+    fileText += `${generateLicense(data.license)}\n\n`;
     fileText += `## Table of Contents\n\n`;
     fileText += ` * [Description](#description)\n\n * [Installation](#installation)\n\n * [Usage-Information](#usage-information)\n\n * [Contribution-Guidelines](#contribution-guidelines)\n\n * [Test-Instructions](#test-instructions)\n\n * [License](#license)\n\n * [Questions](#questions)\n\n`;
     fileText += `## Description\n\n${data.description}\n\n`;
@@ -88,6 +89,21 @@ function init() {
             writeToFile("Professional-README.md", data);
         });
 }
+
+// License badge
+function generateLicense(license) {
+    if (license === "MIT License") {
+        return `[![License: MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/license/mit/)`;
+    } else if (license === "Apache License 2.0") {
+        return `[![License: Apache License 2.0](https://img.shields.io/badge/License-Apache_2.0-violet.svg)](https://www.apache.org/licenses/LICENSE-2.0)`;
+    } else if (license === "GNU General Public License v3.0") {
+        return `[![License: GNU General Public License v3.0](https://img.shields.io/badge/License-GPL_v3.0-red.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html)`;
+    } else if (license === "Mozilla Public License 2.0") {
+        return `[![License: Mozilla Public License 2.0](https://img.shields.io/badge/License-MPL_2.0-orange.svg)](https://www.mozilla.org/en-US/MPL/2.0/)`;
+    } else {
+        return `[![License: The Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)`;
+    }
+};
 
 // Initialize
 init();
