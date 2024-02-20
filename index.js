@@ -4,7 +4,6 @@ const fs = require("fs");
 // README generation function
 function writeToFile(fileName, data) {
     var fileText = "";
-    fileText += `${data.name}'s README\n\n`;
     fileText += ` # ${data.title}\n\n`;
     fileText += `${generateLicense(data.license)}\n\n`;
     fileText += `## Table of Contents\n\n`;
@@ -27,11 +26,6 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer
         .prompt([
-            {
-                type: "input",
-                message: "What is your name?",
-                name: "name",
-            },
             {
                 type: "input",
                 message: "What is your GitHub handle?",
