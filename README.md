@@ -1,6 +1,6 @@
 # Professional README Generator
 
-
+![License: MIT License](https://img.shields.io/badge/License-MIT-green.svg)
 
 ## Table of Contents
 
@@ -17,12 +17,23 @@ Built a command-line application that dynamically generates a professional READM
 
 ## Installation
 
-
+You must first clone this repo. Once the repo is downloaded, open it in VS Code. <br />
+Install Node.js using the terminal command:
+```console
+npm init -y
+```
+Install Inquirer.js using the terminal command:
+```console
+npm i inquirer@8.2.4
+```
+Run the application using the terminal command:
+```console
+node index.js
+```
 
 ## Usage
 
-
-![Alt Text](assets/images/READMEGenerator.png "Website Screenshot")
+[Link to demonstration video]()
 
 ## Contributing
 
@@ -35,7 +46,8 @@ Contributors: <br />
 
 External Sources: <br />
 - [Node.js](https://nodejs.org/en) <br />
-- [Inquirer](https://www.npmjs.com/package/inquirer)
+- [Inquirer](https://www.npmjs.com/package/inquirer) <br />
+- [Shields.io](https://shields.io/)
 
 
 ## License
