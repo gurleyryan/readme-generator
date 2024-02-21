@@ -68,7 +68,7 @@ function init() {
             },
             {
                 type: "list",
-                message: "Select the type of license you would like for your project:",
+                message: "Select the type of license you would like for your project using the arrow keys:",
                 choices: [
                     "MIT License",
                     "Apache License 2.0",
