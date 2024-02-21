@@ -33,6 +33,8 @@ node index.js
 
 ## Usage
 
+Type in your answers to the prompted questions. <br />
+Select the license using the arrow keys. <br />
 [Link to demonstration video](https://drive.google.com/file/d/18jzMA4Rswo_ptyFehnSRr1d_KgSEer02/view)
 
 ## Contributing
