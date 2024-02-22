@@ -18,13 +18,9 @@ Built a command-line application that dynamically generates a professional READM
 ## Installation
 
 You must first clone this repo. Once the repo is downloaded, open it in VS Code. <br />
-Install Node.js using the terminal command:
+Install Node.js modules, including the Inquirer.js dependency, using the terminal command:
 ```console
-npm init -y
-```
-Install Inquirer.js using the terminal command:
-```console
-npm i inquirer@8.2.4
+npm i
 ```
 Run the application using the terminal command:
 ```console
